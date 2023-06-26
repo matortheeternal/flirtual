@@ -135,7 +135,7 @@ export const ProspectActionBar: FC<ProspectActionBarProps> = ({
 	);
 
 	useEffect(() => {
-		tour.start();
+		if (mode === "love") tour.start();
 	}, [tour]);
 
 	const respond = useCallback(
